@@ -1,0 +1,230 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.2 (3/5/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+\addbibresource{papers.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{jesse}{lingeman}{research scientist} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+% 123 Broadway
+% City, State 12345
+% Country
+% ~
+% +0 (000) 111 1111
+% +0 (000) 111 1112
+% ~
+\href{mailto:lingeman@cs.umass.edu}{lingeman@cs.umass.edu}
+% \href{http://www.smith.com}{http://www.smith.com}
+% \href{http://facebook.com/johnsmith}{fb://jsmith}
+% \section{programming}
+% {\color{red} $\varheartsuit$} JavaScript
+% Python, C++, PHP
+% CSS3 \& HTML5
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+
+\entry
+{2012--present}
+{PhD - Computer Science}
+{University of Massachusetts Amherst}
+{BioNLP Lab. Advisor: Hong Yu}
+%------------------------------------------------
+
+\entry
+{2008--2012}
+{Masters {\normalfont of Science} - Computer Science}
+{Courant Institute of Mathematical Sciences at New York University}
+{\emph{Network Inference in Molecular Biology - a hands-on framework} \\ This thesis was an exploration of approaches to gene network inference. Explored the benefits of combining results from a variety of algorithms.}
+
+%------------------------------------------------
+
+\entry
+{2005--2008}
+{Bachelor {\normalfont of Arts} - Political Science}
+{Western Michigan University}
+{Specialization in Game Theory}
+
+%------------------------------------------------
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{experience}
+
+\begin{entrylist}
+
+%------------------------------------------------
+
+\entry
+{2013--present}
+{BioNLP Lab}
+{UMass Amherst}
+{Research scientist \\
+Developing methods to incorporate information from related networks and exploring learning-to-rank methods for related document retrieval.}
+%------------------------------------------------
+
+\entry
+{2010-2012}
+{Databrary}
+{New York University}
+{Developer \\
+Lead developer on the open source behavioral coding software Datavyu.}
+
+\entry
+{2009--2012}
+{Infant Action Lab}
+{New York University}
+{Research Scientist \\
+Research includes studies of motor learning, development, and motor control in human and rhesus macaque infants.}
+
+\entry
+{2010--2011}
+{Plant Genomics Lab}
+{New York University}
+{Volunteer Researcher \\
+Developed genetic algorithms for optimal hyper-parameter search on large computing clusters.
+Work has been adapted to search for optimal parameters for protein folding algorithms.}
+
+\entry
+{2009-2010}
+{Columbia University College of Physicians and Surgeons}
+{Columbia University}
+{Volunteer Researcher \\
+Used SVMs and HMMs to measure flight-path deviation of surgeons training on a DaVinci Laparoscopic Surgical Robot.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{awards}
+
+% \begin{entrylist}
+
+% %------------------------------------------------
+
+% \entry
+% {2010}
+% {Sackler Institute and Wiley Travel Award \\
+% Travel award for the ISDP 2010 conference.}
+
+% \end{entrylist}
+
+\section{service}
+
+\begin{entrylist}
+
+  \entry
+  {2013-2014}
+  {GEO Representative}
+  {}{
+  Computer Science Department GEO representative for Spring 2013 and Fall 2014.}
+
+  \entry
+  {2013}
+  {Program Committee Member}
+  {IEEE ICDM'13 Data Mining in Biomedical Informatics and Healthcare Workshop}
+  {}
+
+  \entry
+  {2010}
+  {Courant Splash}
+  {}
+  {A day of activities to raise interest of computer science in high school students \\
+  Talk and live demonstration to high school students about the history and current state of robots.
+Interactive demonstration of programming and controlling an iRobot Roomba with OpenCV and Python.}
+
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{communication skills}
+
+% \begin{entrylist}
+
+% %------------------------------------------------
+
+% \entry
+% {2011}
+% {Oral Presentation}
+% {California Business Conference}
+% {Presented the research I conducted for my Masters of Commerce degree.}
+
+% %------------------------------------------------
+
+% \entry
+% {2010}
+% {Poster}
+% {Annual Business Conference, Oregon}
+% {As part of the course work for BUS320, I created a poster analyzing several local businesses and presented this at a conference.}
+
+% %------------------------------------------------
+
+% \end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+% \section{interests}
+
+% \textbf{professional:} data analysis, company profiling, risk analysis, economics, web design, web app creation, software design, marketing \textbf{personal:} piano, chess, cooking, dancing, running
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{publications}
+
+\printbibsection{inproceedings}{conference proceedings}
+
+\printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
+
+\printbibsection{book}{books} % Print all books from the bibliography
+
+\printbibsection{talk}{talks} % Print all books from the bibliography
+
+\printbibsection{poster}{poster presentations}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
