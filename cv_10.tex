@@ -146,6 +146,7 @@ Used SVMs and HMMs to measure flight-path deviation of surgeons training on a Da
 % Travel award for the ISDP 2010 conference.}
 
 % \end{entrylist}
+\pagebreak
 
 \section{service}
 
@@ -215,15 +216,24 @@ Interactive demonstration of programming and controlling an iRobot Roomba with O
 
 \section{publications}
 
-\printbibsection{inproceedings}{conference proceedings}
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+  \nocite{*}
+  \printbibliography[sorting=chronological, type=inproceedings, title={conference proceedings}, notkeyword={poster}, heading=bibheading]
+\end{refsection}
 
 \printbibsection{article}{article in peer-reviewed journal} % Print all articles from the bibliography
 
 \printbibsection{book}{books} % Print all books from the bibliography
 
-\printbibsection{talk}{talks} % Print all books from the bibliography
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+  \nocite{*}
+  \printbibliography[sorting=chronological, type=misc, title={podium presentations}, keyword={talk}, heading=bibheading]
+\end{refsection}
 
-\printbibsection{poster}{poster presentations}
+\begin{refsection} % This is a custom heading for those references marked as "inproceedings" but not containing "keyword=france"
+  \nocite{*}
+  \printbibliography[sorting=chronological, type=misc, title={poster presentations}, keyword={poster}, heading=bibheading]
+\end{refsection}
 
 %----------------------------------------------------------------------------------------
 
